@@ -1,11 +1,16 @@
 from machine import Pin
 from time import sleep
 
+# ESP32 Pin connection
 led = Pin(0, Pin.OUT)
 
+# Blinking loop
 while True:
-    led.on()
+    
+    # Turn the LED on
+    led.value(1)
     sleep(0.5)
 
-    led.off()
+    # Turn the LED off
+    led.value(0)
     sleep(0.5)
