@@ -4,13 +4,32 @@ Repo for my assignments from the **"Sensing the World"** module of **ENGR 095** 
 
 ## Programming Activities
 
-- **September 9:** Basic print output and blinking LED programs.
-- **September 14:** Sensor input and security system prototype using an Arduino Nano ESP32.
+### September 9
 
-### Programs
+Basic MicroPython programs:
 
-- [program1.py](Programming%20Activities/program1.py) — Hello World
-- [program2.py](Programming%20Activities/program2.py) — Name Print
-- [program3.py](Programming%20Activities/program3.py) — Name Print with Variables
-- [program4.py](Programming%20Activities/program4.py) — Blink Green LED
-- [program5.py](Programming%20Activities/program5.py) — Security System Prototype
+* Hello World
+* Name printing
+* Variables
+* Blinking LED
+
+### September 14
+
+Security system prototype using an Arduino Nano ESP32:
+
+* Photoresistor sensor input
+* Momentary pushbutton input
+* Potentiometer input
+* Red and green LED outputs
+
+### September 16
+
+Microcontrollers, motors, and sensor data collection:
+
+* Servo motor controlled using a switch
+* Rain-drop sensor measurements using the Arduino Nano ESP32 ADC
+* Automated voltage data collection
+* CSV data generation
+* Sensor performance analysis using averages, standard deviations, and trendlines
+
+[View Programming Activities](./Programming%20Activities/)
