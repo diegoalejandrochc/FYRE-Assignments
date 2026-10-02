@@ -98,26 +98,6 @@ The final integrated program used for the completed prototype.
 
 The final version uses percentage change from the PEDOT:PSS dry baseline and includes logic that temporarily disarms the PEDOT:PSS sensor after activation because the sensor was observed to recover slowly after exposure to high humidity.
 
-## Engineering Iteration and Troubleshooting
-
-Several changes were made throughout development.
-
-### PEDOT:PSS Sensor
-
-The fabricated PEDOT:PSS sensor showed a large change when exposed to humid breath, but it sometimes remained at the changed value for several minutes.
-
-To account for this behavior, the final program does not require the PEDOT:PSS sensor to immediately return to its dry value before the user can reopen the floodgate. Instead, the sensor is temporarily disarmed after triggering and automatically re-arms after recovering sufficiently close to its baseline.
-
-We also experimented with both **raw ADC difference** and **percentage change** to determine the most useful method for detecting humidity.
-
-### Rain Sensor
-
-The rain sensor produced high ADC readings when dry and lower readings when exposed to water. Testing was used to select a threshold that reliably distinguished wet and dry conditions.
-
-### Stepper Motor
-
-The stepper motor was first tested separately before being integrated into the complete system. Its direction, number of steps, and stepping delay were adjusted so that it could move the physical floodgate through the required distance.
-
 ### Mechanical System
 
 The floodgate moves vertically along guide rails. String attached near both sides of the gate joins into a central lifting line connected to a spool driven by the stepper motor. This helps keep the gate approximately level while it moves.
@@ -127,3 +107,10 @@ The floodgate moves vertically along guide rails. String attached near both side
 The prototype was tested under several conditions:
 
 - Both sensors dry
+- Rain sensor exposed to water
+- PEDOT:PSS sensor exposed to increased humidity
+- Reset button pressed while water was still detected
+- Reset button pressed after the rain sensor returned to dry conditions
+- Multiple gate opening and closing cycles
+
+A successful test required the correct LED indication and the expected gate response for each condition.
