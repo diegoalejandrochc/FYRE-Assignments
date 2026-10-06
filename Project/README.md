@@ -26,7 +26,7 @@ The PEDOT:PSS sensor provides an early response to increased humidity, while the
 
 - Arduino-compatible microcontroller running MicroPython
 - Homemade PEDOT:PSS humidity sensor
-- Commercial rain/moisture sensor
+- Commercial rain sensor
 - 28BYJ-48 stepper motor
 - ULN2003 stepper motor driver
 - Red LED
