@@ -172,7 +172,7 @@ The final version:
 - Allows the user to reset and reopen the gate
 - Temporarily disarms the PEDOT:PSS sensor after activation because the sensor was observed to recover slowly after exposure to high humidity
 - Automatically re-arms the PEDOT:PSS sensor once it returns sufficiently close to its dry baseline
-- Includes a motor safety timeout
+- Includes a motor safety limit that stops the stepper if it runs for too long.
 
 ## Testing
 
